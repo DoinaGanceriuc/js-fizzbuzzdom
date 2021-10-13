@@ -15,6 +15,10 @@ containerElement.insertAdjacentHTML("afterbegin", "<h1>FizzBuzzDOM</h1>");
 // ciclo for
 for (let i = 1; i <= 100; i++) {
   /* console.log(i); */
-  const element = `<li class="box fizzbuzz - ${i}"> fizzbuzz </li>`;
-  listElement.insertAdjacentHTML("beforeend", element);
+
+  if (i % 3 == 0 && i % 5 == 0) {
+    const element = `<li class="box fizzbuzz - ${i}"> fizzbuzz </li>`;
+    listElement.insertAdjacentHTML("beforeend", element);
+    /* console.log(element); */
+  }
 }
