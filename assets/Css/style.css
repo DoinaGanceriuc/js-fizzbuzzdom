@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* common */
 body {
   background-color: #183a4a;
 }
@@ -12,6 +12,20 @@ body {
   width: 50%;
   margin: 1rem auto;
 }
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  text-align: center;
+  line-height: 100px;
+  margin: 1rem;
+}
+
 h1 {
   color: #ffffff;
   text-align: center;
