@@ -28,5 +28,11 @@ for (let i = 1; i <= 100; i++) {
   } else if (i % 5 == 0) {
     const element = `<li class="box buzz - ${i}"> buzz </li>`;
     listElement.insertAdjacentHTML("beforeend", element);
+
+    /* tutti gli altri numeri */
+  } else {
+    const element = `<li class="box blue - ${i}"> ${i} </li>`;
+    listElement.insertAdjacentHTML("beforeend", element);
+    /* console.log(element); */
   }
 }
