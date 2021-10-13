@@ -1,5 +1,4 @@
 /* Scrivi un programma che esegua un ciclo da 1 a 100 e a ogni iterazione appenda un elemento html al container con uno stile differente a seconda del valore dell'indice
-per i multipli di 5
  */
 
 // selezionare un elemento dal DOM
@@ -23,6 +22,11 @@ for (let i = 1; i <= 100; i++) {
     /* multipli di 3*/
   } else if (i % 3 == 0) {
     const element = `<li class="box fizz - ${i}"> fizz </li>`;
+    listElement.insertAdjacentHTML("beforeend", element);
+
+    /* multipli di 5 */
+  } else if (i % 5 == 0) {
+    const element = `<li class="box buzz - ${i}"> buzz </li>`;
     listElement.insertAdjacentHTML("beforeend", element);
   }
 }
