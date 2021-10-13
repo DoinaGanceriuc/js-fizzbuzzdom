@@ -12,3 +12,8 @@ body {
   width: 50%;
   margin: 1rem auto;
 }
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 5rem;
+}

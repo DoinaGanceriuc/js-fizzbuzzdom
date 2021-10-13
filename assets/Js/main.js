@@ -6,6 +6,8 @@ per i multipli di 5
 
 const listElement = document.querySelector(".list");
 /* console.log(listElement); */
+const containerElement = document.querySelector(".container");
+containerElement.insertAdjacentHTML("afterbegin", "<h1>FizzBuzzDOM</h1>");
 
 for (let i = 1; i <= 100; i++) {
   console.log(i);
